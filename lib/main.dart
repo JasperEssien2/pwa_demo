@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  //TODO: Initialise the BeamerDelegate
+  //TODO: 1. Initialise the BeamerDelegate
   final routerDelegate = null;
 
   @override
@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (!context.isLargeScreen) {
-            // TODO: Return only the JobList widget
+            // TODO: 2. Return only the JobList widget
           } else {
             final applyHorizontalMargin = constraints.maxWidth > 1200;
 
@@ -132,9 +132,10 @@ class _MyHomePageState extends State<MyHomePage> {
             final detailMaxWidth =
                 constraints.maxWidth * (applyHorizontalMargin ? 0.5 : 0.6);
 
-            //TODO: Return a master-detail widget view
+            //TODO: 3. Return a master-detail widget view
           }
 
+          //TODO: 4. Remove this line of code
           throw Exception("Please return a widget");
         },
       ),

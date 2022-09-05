@@ -37,7 +37,7 @@ class JobCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        //TODO: Perform navigation to the detail screen regardless of screen size
+        //TODO: 5. Perform navigation to the detail screen regardless of screen size
       },
       child: AnimatedBuilder(
           animation: context.isLargeScreen
