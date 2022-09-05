@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/data/models/job_model.dart';
+import 'package:pwa_demo/job_model.dart';
 
 class CompanyProfileAvatar extends StatelessWidget {
   const CompanyProfileAvatar(

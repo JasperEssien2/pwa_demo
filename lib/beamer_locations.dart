@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pwa_demo/extensions.dart';
 import 'package:pwa_demo/main.dart';
 
-import '../data/models/job_model.dart';
+import '../job_model.dart';
 import 'widgets/detail_widgets.dart';
 
 class HomeLocation extends BeamLocation<BeamState> {

@@ -1,9 +1,9 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:pwa_demo/data/models/job_model.dart';
+import 'package:pwa_demo/job_model.dart';
 
-import 'theme/colors.dart';
+import 'colors.dart';
 
 class AppProvider extends InheritedWidget {
   AppProvider({Key? key, required Widget child})

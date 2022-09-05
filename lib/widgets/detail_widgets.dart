@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/data/models/job_model.dart';
+import 'package:pwa_demo/colors.dart';
 import 'package:pwa_demo/extensions.dart';
-import 'package:pwa_demo/presentation/theme/colors.dart';
+import 'package:pwa_demo/job_model.dart';
 
 import 'company_profile_avatar.dart';
 

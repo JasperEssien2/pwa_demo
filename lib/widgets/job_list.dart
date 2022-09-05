@@ -1,10 +1,10 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/data/models/job_model.dart';
+import 'package:pwa_demo/job_model.dart';
 import 'package:pwa_demo/extensions.dart';
-import 'package:pwa_demo/presentation/widgets/company_profile_avatar.dart';
+import 'package:pwa_demo/widgets/company_profile_avatar.dart';
 
-import '../theme/colors.dart';
+import '../colors.dart';
 
 class JobList extends StatelessWidget {
   const JobList({Key? key}) : super(key: key);

@@ -1,11 +1,11 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:pwa_demo/extensions.dart';
-import 'package:pwa_demo/presentation/widgets/job_list.dart';
+import 'package:pwa_demo/widgets/job_list.dart';
 
-import 'presentation/app_provider.dart';
-import 'presentation/beamer_locations.dart';
-import 'presentation/theme/colors.dart';
+import '/app_provider.dart';
+import '/beamer_locations.dart';
+import '/colors.dart';
 
 void main() {
   runApp(const MyApp());
