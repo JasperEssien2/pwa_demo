@@ -1,6 +1,6 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/ext.dart';
+import 'package:pwa_demo/extensions.dart';
 import 'package:pwa_demo/main.dart';
 
 import '../data/models/job_model.dart';
@@ -12,7 +12,7 @@ class HomeLocation extends BeamLocation<BeamState> {
     JobModel? job;
 
     try {
-      job = context.provider!.jobs.firstWhere(
+      job = context.provider.jobs.firstWhere(
           (element) => element.id.toString() == state.pathParameters['id']);
     } catch (e) {}
 
@@ -47,10 +47,10 @@ class InnerJobLocation extends BeamLocation<BeamState> {
     JobModel? job;
 
     try {
-      job = context.provider!.jobs.firstWhere(
+      job = context.provider.jobs.firstWhere(
           (element) => element.id.toString() == state.pathParameters['id']);
     } catch (e) {
-      job = context.provider!.jobs.first;
+      job = context.provider.jobs.first;
     }
 
     return [

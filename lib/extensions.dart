@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/presentation/current_screen_provider.dart';
+import 'package:pwa_demo/presentation/app_provider.dart';
 
 extension BuildContextExt on BuildContext {
   bool get isLargeScreen {
@@ -9,7 +9,7 @@ extension BuildContextExt on BuildContext {
     return width > 600;
   }
 
-  AppProvider? get provider => AppProvider.of(this);
+  AppProvider get provider => AppProvider.of(this);
 }
 
 extension BoxConstraintExt on BoxConstraints {

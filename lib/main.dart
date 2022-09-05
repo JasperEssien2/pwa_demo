@@ -1,10 +1,10 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/ext.dart';
+import 'package:pwa_demo/extensions.dart';
 import 'package:pwa_demo/presentation/widgets/job_list.dart';
 
-import 'presentation/beamer_location.dart';
-import 'presentation/current_screen_provider.dart';
+import 'presentation/app_provider.dart';
+import 'presentation/beamer_locations.dart';
 import 'presentation/theme/colors.dart';
 
 void main() {
@@ -73,6 +73,7 @@ class _MyAppState extends State<MyApp> {
   }
 }
 
+/// Design inspired by this deisgn https://dribbble.com/shots/17092342-Job-Finder-App
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
     Key? key,
@@ -125,15 +126,15 @@ class _MyHomePageState extends State<MyHomePage> {
           if (!context.isLargeScreen) {
             return const JobList();
           } else {
-            final showMargin = constraints.maxWidth > 1200;
+            final applyHorizontalMargin = constraints.maxWidth > 1200;
 
             final horizontalMargin =
-                showMargin ? constraints.maxWidth * .1 : 0.0;
+                applyHorizontalMargin ? constraints.maxWidth * .1 : 0.0;
 
             final listviewMaxWidth =
-                constraints.maxWidth * (showMargin ? 0.3 : 0.4);
+                constraints.maxWidth * (applyHorizontalMargin ? 0.3 : 0.4);
             final detailMaxWidth =
-                constraints.maxWidth * (showMargin ? 0.5 : 0.6);
+                constraints.maxWidth * (applyHorizontalMargin ? 0.5 : 0.6);
 
             return Container(
               color: Colors.white70,
@@ -145,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     width: detailMaxWidth,
                     child: Beamer(
-                      key: context.provider!.childBeamerKey,
+                      key: context.provider.childBeamerKey,
                       routerDelegate: innerRouterDelegate,
                     ),
                   ),
@@ -157,5 +158,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
 }
