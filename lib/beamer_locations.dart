@@ -1,9 +1,11 @@
+import 'dart:developer';
+
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:pwa_demo/extensions.dart';
 import 'package:pwa_demo/main.dart';
 
-import '../job_model.dart';
+import 'job_model.dart';
 import 'widgets/detail_widgets.dart';
 
 class HomeLocation extends BeamLocation<BeamState> {
@@ -14,7 +16,9 @@ class HomeLocation extends BeamLocation<BeamState> {
     try {
       job = context.provider.jobs.firstWhere(
           (element) => element.id.toString() == state.pathParameters['id']);
-    } catch (e) {}
+    } catch (e) {
+      log(e.toString());
+    }
 
     return [
       const BeamPage(
