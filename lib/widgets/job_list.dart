@@ -37,10 +37,7 @@ class JobCard extends StatelessWidget {
 
     return GestureDetector(
       onTap: () {
-        context.isLargeScreen
-            ? context.provider.childBeamerKey.currentState?.routerDelegate
-                .beamToNamed('/${model.id}', routeState: 'large')
-            : context.beamToNamed('/${model.id}', routeState: 'small');
+        //TODO: Perform navigation to the detail screen regardless of screen size
       },
       child: AnimatedBuilder(
           animation: context.isLargeScreen

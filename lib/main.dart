@@ -1,7 +1,6 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 import 'package:pwa_demo/extensions.dart';
-import 'package:pwa_demo/widgets/job_list.dart';
 
 import '/app_provider.dart';
 import '/beamer_locations.dart';
@@ -19,11 +18,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final routerDelegate = BeamerDelegate(
-    locationBuilder: (routeInformation, _) {
-      return HomeLocation();
-    },
-  );
+  //TODO: Initialise the BeamerDelegate
+  final routerDelegate = null;
 
   @override
   Widget build(BuildContext context) {
@@ -124,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (!context.isLargeScreen) {
-            return const JobList();
+            // TODO: Return only the JobList widget
           } else {
             final applyHorizontalMargin = constraints.maxWidth > 1200;
 
@@ -136,24 +132,10 @@ class _MyHomePageState extends State<MyHomePage> {
             final detailMaxWidth =
                 constraints.maxWidth * (applyHorizontalMargin ? 0.5 : 0.6);
 
-            return Container(
-              color: Colors.white70,
-              margin: EdgeInsets.symmetric(horizontal: horizontalMargin),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(width: listviewMaxWidth, child: const JobList()),
-                  SizedBox(
-                    width: detailMaxWidth,
-                    child: Beamer(
-                      key: context.provider.childBeamerKey,
-                      routerDelegate: innerRouterDelegate,
-                    ),
-                  ),
-                ],
-              ),
-            );
+            //TODO: Return a master-detail widget view
           }
+
+          throw Exception("Please return a widget");
         },
       ),
     );
