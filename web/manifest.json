@@ -1,5 +1,5 @@
 {
-    "name": "pwa_demo",
+    "name": "PWA Demo",
     "short_name": "pwa_demo",
     "start_url": ".",
     "display": "standalone",
@@ -8,6 +8,7 @@
     "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    
     "icons": [
         {
             "src": "icons/Icon-192.png",
