@@ -126,15 +126,14 @@ class _MyHomePageState extends State<MyHomePage> {
           if (!context.isLargeScreen) {
             return const JobList();
           } else {
-            final applyHorizontalMargin = constraints.maxWidth > 1200;
-
+            // for extremely large screens introduce extra margin
             final horizontalMargin =
-                applyHorizontalMargin ? constraints.maxWidth * .1 : 0.0;
+                context.isExpanded ? constraints.maxWidth * .1 : 0.0;
 
             final listviewMaxWidth =
-                constraints.maxWidth * (applyHorizontalMargin ? 0.3 : 0.4);
+                constraints.maxWidth * (context.isExpanded ? 0.3 : 0.4);
             final detailMaxWidth =
-                constraints.maxWidth * (applyHorizontalMargin ? 0.5 : 0.6);
+                constraints.maxWidth * (context.isExpanded ? 0.5 : 0.6);
 
             return Container(
               color: Colors.white70,
