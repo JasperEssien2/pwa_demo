@@ -1,7 +1,7 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:pwa_demo/job_model.dart';
 import 'package:pwa_demo/extensions.dart';
+import 'package:pwa_demo/job_model.dart';
 import 'package:pwa_demo/widgets/company_profile_avatar.dart';
 
 import '../colors.dart';
@@ -39,8 +39,8 @@ class JobCard extends StatelessWidget {
       onTap: () {
         context.isLargeScreen
             ? context.provider.childBeamerKey.currentState?.routerDelegate
-                .beamToNamed('/${model.id}', routeState: 'large')
-            : context.beamToNamed('/${model.id}', routeState: 'small');
+                .beamToNamed('/${model.id}')
+            : context.beamToNamed('/${model.id}');
       },
       child: AnimatedBuilder(
           animation: context.isLargeScreen
