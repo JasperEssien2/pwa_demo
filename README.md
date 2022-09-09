@@ -3,7 +3,7 @@
 A simple responsive application that demonstrates Progressive Web App (PWA) in flutter.
 
 https://user-images.githubusercontent.com/24453401/189306113-6db77737-de8d-4eef-816c-2e2b033cd6e8.mp4
-> PWA running on IOS device and Ipad
+> PWA running on IOS device and Ipad. Designed inspired by https://dribbble.com/shots/17092342-Job-Finder-App
 
 
 #### Set Up
