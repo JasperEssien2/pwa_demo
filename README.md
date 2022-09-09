@@ -1,6 +1,8 @@
 # pwa_demo
 
-A new Flutter project.
+A simple demo application that demonstrates the Progressive Web App (PWA) in flutter.
+
+<iframe src="https://player.vimeo.com/video/747937754" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Getting Started
 
