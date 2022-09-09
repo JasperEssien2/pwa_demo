@@ -1,18 +1,17 @@
 # pwa_demo
 
-A simple demo application that demonstrates the Progressive Web App (PWA) in flutter.
+A simple responsive application that demonstrates Progressive Web App (PWA) in flutter.
 
-<iframe src="https://player.vimeo.com/video/747937754" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+https://user-images.githubusercontent.com/24453401/189306113-6db77737-de8d-4eef-816c-2e2b033cd6e8.mp4
+> PWA running on IOS device and Ipad
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+#### Set Up
+Clone the codebase by running the command `git clone git@github.com:JasperEssien2/pwa_demo.git`.
 
-A few resources to get you started if this is your first Flutter project:
+The dependencies used in this project are indicated in the table below.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+|Dependency|Use cases|
+| ------ | ------ |
+|[`font_awesome_flutter`](https://pub.dev/packages/font_awesome_flutter)|To access icons that aren't available in the material icon|
+|[`beamer`](https://pub.dev/packages/beamer) | Used for efficient, complicated navigation|
